@@ -6,9 +6,7 @@ const button = document.querySelector('button');
 button.addEventListener('click', calculateTotal);
 
 input.addEventListener('keydown', function(event) {
-    if (event.key === "Enter") {
-        calculateTotal();
-    }
+    event.key === "Enter" ? calculateTotal() : null
 });
 
 function calculateTotal() {
