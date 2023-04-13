@@ -1,0 +1,23 @@
+{
+    "name": "AZ Weed Tax Calculator",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "/src/index.html",
+        "default_title": "Weed Tax Calculator"
+    },
+    "description": "An extension created to calculate your weed tax for you. Enter in your subtotal and calculate your price of purchase after taxes.",
+    "icons": {
+        "16": "/src/icons/Arizona-Marijuana-Tax-1024x576.jpg"
+    },
+    "author": "caleblopez96@gmail.com",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["/src/script.js"]
+        }
+    ]
+}

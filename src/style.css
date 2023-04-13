@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    font-family: 'Open Sans', sans-serif;
+    gap: 1rem;
+    justify-content: center;
+    margin: 0 1rem;
+    min-height: 100vh;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+}
+
+input {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.results {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.75rem;
+}
