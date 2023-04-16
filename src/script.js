@@ -11,10 +11,9 @@ input.addEventListener('keydown', function(event) {
 
 function calculateTotal() {
     let subtotal = parseFloat(input.value);
-    if (isNaN(subtotal)) {
-    alert('Please enter a real number.');
-    return;
-}
+        if (isNaN(subtotal) || subtotal < 0) {
+        return null;
+    }
 
     let medicalTax = subtotal * 0.083;
     let recreationalTax = subtotal * 0.243;
