@@ -11,6 +11,7 @@
 
 body {
     align-items: center;
+    background-color: #F4F5FA;
     display: flex;
     flex-flow: column wrap;
     font-family: 'Open Sans', sans-serif;
@@ -31,11 +32,31 @@ input {
 }
 
 button {
+    background-color: #fff;
+    border: 1px solid #d5d9d9;
+    border-radius: 8px;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    box-sizing: border-box;
+    color: #353839;
+    cursor: pointer;
+    display: inline-block;
     font-family: 'Open Sans', sans-serif;
-}
+    font-size: 13px;
+    line-height: 29px;
+    padding: 0 10px 0 11px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: 100px;
+}   
 
 .results {
     display: flex;
     flex-flow: row wrap;
     gap: 0.75rem;
 }
+

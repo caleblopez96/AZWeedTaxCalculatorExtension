@@ -1,17 +1,18 @@
-const input = document.querySelector('input');
-const med = document.querySelector('#medicalTaxTotal');
-const rec = document.querySelector('#recreationalTaxTotal');
-const button = document.querySelector('button');
+document.addEventListener('DOMContentLoaded', function() {
+    const input = document.querySelector('input');
+    const med = document.querySelector('#medicalTaxTotal');
+    const rec = document.querySelector('#recreationalTaxTotal');
+    const button = document.querySelector('button');
 
-button.addEventListener('click', calculateTotal);
+    button.addEventListener('click', calculateTotal);
 
-input.addEventListener('keydown', function(event) {
-    event.key === "Enter" ? calculateTotal() : null
-});
+    input.addEventListener('keydown', function(event) {
+        event.key === "Enter" ? calculateTotal() : null
+    });
 
-function calculateTotal() {
-    let subtotal = parseFloat(input.value);
-        if (isNaN(subtotal) || subtotal < 0) {
+    function calculateTotal() {
+        let subtotal = parseFloat(input.value);
+            if (isNaN(subtotal) || subtotal < 0) {
         return null;
     }
 
@@ -22,4 +23,5 @@ function calculateTotal() {
 
     med.textContent = 'med: $' + totalMed.toFixed(2);
     rec.textContent = 'rec: $' + totalRec.toFixed(2);
-}
+    }
+});
