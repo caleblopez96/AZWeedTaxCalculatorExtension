@@ -11,7 +11,7 @@
 
 body {
     align-items: center;
-    background-color: #F4F5FA;
+    background-color: #505b41;
     display: flex;
     flex-flow: column wrap;
     font-family: 'Open Sans', sans-serif;
@@ -19,6 +19,11 @@ body {
     justify-content: center;
     margin: 0 1rem;
     min-height: 100vh;
+}
+
+label {
+    font-weight: bold;
+    letter-spacing: .1rem;
 }
 
 input::-webkit-outer-spin-button,
@@ -31,19 +36,25 @@ input {
     text-align: center;
 }
 
-button {
-    background-color: #fff;
+.buttonWrapper {
+    display: flex;
+    flex-flow: row wrap;
+    gap: .5rem;
+    justify-content: center;
+}
+
+.calculate, .clear {
+    background-color: #f0f0f0;
     border: 1px solid #d5d9d9;
     border-radius: 8px;
     box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
-    box-sizing: border-box;
     color: #353839;
     cursor: pointer;
     display: inline-block;
     font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-    line-height: 29px;
-    padding: 0 10px 0 11px;
+    font-size: 12px;
+    line-height: 25px;
+    padding: 0 8px 0 10px;
     position: relative;
     text-align: center;
     text-decoration: none;
@@ -51,7 +62,6 @@ button {
     -webkit-user-select: none;
     touch-action: manipulation;
     vertical-align: middle;
-    width: 100px;
 }   
 
 .results {

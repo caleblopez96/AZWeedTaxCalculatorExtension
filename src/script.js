@@ -2,17 +2,26 @@ document.addEventListener('DOMContentLoaded', function() {
     const input = document.querySelector('input');
     const med = document.querySelector('#medicalTaxTotal');
     const rec = document.querySelector('#recreationalTaxTotal');
-    const button = document.querySelector('button');
+    const calcButton = document.querySelector('.calculate');
+    const clearButton = document.querySelector('.clear');
 
-    button.addEventListener('click', calculateTotal);
+    calcButton.addEventListener('click', calculateTotal);
+
+    clearButton.addEventListener('click', clearTotal);
 
     input.addEventListener('keydown', function(event) {
         event.key === "Enter" ? calculateTotal() : null
     });
 
+    function clearTotal() {
+        input.value = '';
+        med.textContent = 'Med:'
+        rec.textContent = 'Rec:'
+    }
+
     function calculateTotal() {
         let subtotal = parseFloat(input.value);
-            if (isNaN(subtotal) || subtotal < 0) {
+        if (isNaN(subtotal) || subtotal <= 0) {
         return null;
     }
 
@@ -21,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let totalMed = subtotal + medicalTax;
     let totalRec = subtotal + recreationalTax;
 
-    med.textContent = 'med: $' + totalMed.toFixed(2);
-    rec.textContent = 'rec: $' + totalRec.toFixed(2);
+    med.textContent = 'Med: $' + totalMed.toFixed(2);
+    rec.textContent = 'Rec: $' + totalRec.toFixed(2);
     }
 });
