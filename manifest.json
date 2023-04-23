@@ -8,7 +8,7 @@
     },
     "description": "An extension created to calculate your weed tax for you. Enter in your subtotal and calculate your price of purchase after taxes.",
     "icons": {
-        "16": "/src/icons/Arizona-Marijuana-Tax-1024x576.jpg"
+        "16": "/src/icons/icons8-weed-16.png"
     },
     "author": "caleblopez96@gmail.com",
     "permissions": [
