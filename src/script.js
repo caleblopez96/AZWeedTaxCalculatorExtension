@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (isNaN(subtotal) || subtotal <= 0) {
         return null;
     }
-
+    // these calculations for the taxes are wrong. I think its 8 and 16 to equal 24
     let medicalTax = subtotal * 0.083;
     let recreationalTax = subtotal * 0.243;
     let totalMed = subtotal + medicalTax;
