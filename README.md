@@ -1,4 +1,4 @@
-
+Random Dad Joke's!
 
 DISCLAIMER:
 This project is intended for personal use only, and was created as a means of enhancing my JavaScript skills. It is not intended for commercial use, and I make no guarantees regarding its functionality or compatibility with all systems or browsers.
