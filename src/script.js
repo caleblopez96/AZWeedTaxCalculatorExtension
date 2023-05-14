@@ -5,6 +5,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const calcButton = document.querySelector('.calculate');
     const clearButton = document.querySelector('.clear');
 
+    const subTotalMappings = [
+        { website: 'dispensary 1.com', identifiers: ['.subtotal', '#orderTotal']},
+        { website: 'dispensary 1.com', identifiers: ['.subtotal', '#orderTotal']},
+        { website: 'dispensary 1.com', identifiers: ['.subtotal', '#orderTotal']},
+        { website: 'dispensary 1.com', identifiers: ['.subtotal', '#orderTotal']},
+        { website: 'dispensary 1.com', identifiers: ['.subtotal', '#orderTotal']}
+    ]
+
     calcButton.addEventListener('click', calculateTotal);
 
     clearButton.addEventListener('click', clearTotal);
