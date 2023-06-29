@@ -1,4 +1,4 @@
-WORK IN PROGESS...
+Random Dad Joke's!
 
 DISCLAIMER:
 This project is intended for personal use only, and was created as a means of enhancing my JavaScript skills. It is not intended for commercial use, and I make no guarantees regarding its functionality or compatibility with all systems or browsers.
@@ -12,5 +12,11 @@ Usage: Open the extension, enter the subtotal of your purchase, then press calcu
 Built With: This project was created with HTML, CSS and JavaScript.
 
 Contributing: Contributions and constructive criticism for this project are welcome. If you have suggestions for how to improve the code, please submit a pull request or open an issue.
+
+Websites that dont use leafly, jane, dutchie or weedmaps that needs the extension:
+AZ ORGANIX: Jane --> X
+CURALEAF: Dutchie --> X
+
+
 
 Contact: If you have any questions about this script, you can reach me at caleblopez96@gmail.com.

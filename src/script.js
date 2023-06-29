@@ -6,12 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const clearButton = document.querySelector('.clear');
 
     const subTotalMappings = [
-        { website: 'dispensary 1.com', identifiers: ['.subtotal', '#orderTotal']},
+        { website: 'https://www.arizonaorganix.org/', identifiers: ['.subtotal', '#orderTotal'] },
         { website: 'dispensary 1.com', identifiers: ['.subtotal', '#orderTotal']},
         { website: 'dispensary 1.com', identifiers: ['.subtotal', '#orderTotal']},
         { website: 'dispensary 1.com', identifiers: ['.subtotal', '#orderTotal']},
         { website: 'dispensary 1.com', identifiers: ['.subtotal', '#orderTotal']}
-    ]
+    ];
 
     calcButton.addEventListener('click', calculateTotal);
 
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     // these calculations for the taxes are wrong. I think its 8 and 16 to equal 24
     let medicalTax = subtotal * 0.083;
-    let recreationalTax = subtotal * 0.243;
+    let recreationalTax = subtotal * 0.246;
     let totalMed = subtotal + medicalTax;
     let totalRec = subtotal + recreationalTax;
 
